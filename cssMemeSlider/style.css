@@ -1,62 +1,74 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 99%;
+    height: 99%;
+    white-space: nowrap;
+}
+.memeSider {
+    width: 60%;
+    height: 70%;
+    margin: 0 auto;
+}
+
 .blockred, .blockgreen, .blockblue, .blockcoral {
-    width: 100px;
-    height: 100px;
     display: inline-block;
-    margin: 0;
-    padding: 0;
 }
 
 .blockred-description, .blockgreen-description, .blockblue-description, .blockcoral-description {
-    width: 100px;
+    width: 100%;
     display: inline-block;
     margin: 0;
     padding: 0;
 }
 
 .blockred {
-    background-color: red;
+    height: 100%;
+    width: 100%;
+
 }
 
+
 .blockblue {
-    background-color: blue;
+    height: 100%;
+    width: 100%;
+
 }
 
 .blockgreen {
-    background-color: green;
+    background-image: url("");
+    height: 100%;
+    width: 100%;
 }
 
 .blockcoral {
-    background-color: coral;
+    height: 100%;
+    width: 100%;
 }
 
 
 .slider {
-    height: 100px;
-    width: 400px;
+    height: 100%;
+    width: 100%;
 }
 
 .wraper {
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     margin: auto;
 }
 
 .wraper-description {
-    width: 100px;
+    width: 100%;
     overflow: hidden;
     margin: auto;
 }
 
 .slider-description {
-    width: 400px;
-}
-
-
-.test {
-    width: 100px;
-    height: 100px;
-    background-color: black;
+    width: 100%;
 }
 
 #but1:checked~.wraper>.slider {
@@ -65,17 +77,17 @@
 }
 
 #but2:checked~.wraper>.slider {
-    transform: translateX(-100px);
+    transform: translateX(-100%);
     transition: transform 0.5s linear;
 }
 
 #but3:checked~.wraper>.slider {
-    transform: translateX(-200px);
+    transform: translateX(-200%);
     transition: transform 0.5s linear;
 }
 
 #but4:checked~.wraper>.slider {
-    transform: translateX(-300px);
+    transform: translateX(-300%);
     transition: transform 0.5s linear;
 }
 
@@ -85,17 +97,17 @@
 }
 
 #but2:checked~.wraper-description>.slider-description {
-    transform: translateX(-100px);
+    transform: translateX(-100%);
     transition: transform 0.5s linear;
 }
 
 #but3:checked~.wraper-description>.slider-description {
-    transform: translateX(-200px);
+    transform: translateX(-200%);
     transition: transform 0.5s linear;
 }
 
 #but4:checked~.wraper-description>.slider-description {
-    transform: translateX(-300px);
+    transform: translateX(-300%);
     transition: transform 0.5s linear;
 }
 
