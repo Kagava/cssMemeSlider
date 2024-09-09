@@ -1,11 +1,101 @@
-.block {
+.blockred, .blockgreen, .blockblue, .blockcoral {
     width: 100px;
     height: 100px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.blockred-description, .blockgreen-description, .blockblue-description, .blockcoral-description {
+    width: 100px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.blockred {
     background-color: red;
+}
+
+.blockblue {
+    background-color: blue;
+}
+
+.blockgreen {
+    background-color: green;
+}
+
+.blockcoral {
+    background-color: coral;
+}
+
+
+.slider {
+    height: 100px;
+    width: 400px;
+}
+
+.wraper {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
     margin: auto;
 }
 
-.block:active {
-    background-color: blue;
+.wraper-description {
+    width: 100px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider-description {
+    width: 400px;
+}
+
+
+.test {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+#but1:checked~.wraper>.slider {
+    transform: translateX(0);
+    transition: transform 0.5s linear;
+}
+
+#but2:checked~.wraper>.slider {
+    transform: translateX(-100px);
+    transition: transform 0.5s linear;
+}
+
+#but3:checked~.wraper>.slider {
+    transform: translateX(-200px);
+    transition: transform 0.5s linear;
+}
+
+#but4:checked~.wraper>.slider {
+    transform: translateX(-300px);
+    transition: transform 0.5s linear;
+}
+
+#but1:checked~.wraper-description>.slider-description {
+    transform: translateX(0);
+    transition: transform 0.5s linear;
+}
+
+#but2:checked~.wraper-description>.slider-description {
+    transform: translateX(-100px);
+    transition: transform 0.5s linear;
+}
+
+#but3:checked~.wraper-description>.slider-description {
+    transform: translateX(-200px);
+    transition: transform 0.5s linear;
+}
+
+#but4:checked~.wraper-description>.slider-description {
+    transform: translateX(-300px);
+    transition: transform 0.5s linear;
 }
 
