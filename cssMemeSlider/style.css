@@ -6,6 +6,7 @@ body {
     width: 99%;
     height: 99%;
     white-space: nowrap;
+    
 }
 .memeSider {
     width: 60%;
@@ -22,6 +23,7 @@ body {
     display: inline-block;
     margin: 0;
     padding: 0;
+    font-size: 3vw;
 }
 
 .blockred {
@@ -38,7 +40,6 @@ body {
 }
 
 .blockgreen {
-    background-image: url("");
     height: 100%;
     width: 100%;
 }
@@ -62,15 +63,20 @@ body {
 }
 
 .wraper-description {
-    width: 100%;
+    width: calc(100% - 101px);
     overflow: hidden;
-    margin: auto;
+    margin: 0;
+    display: inline-block;
 }
 
 .slider-description {
     width: 100%;
 }
 
+#but1, #but2, #but3, #but4 {
+    display: none;
+}
+ 
 #but1:checked~.wraper>.slider {
     transform: translateX(0);
     transition: transform 0.5s linear;
@@ -91,23 +97,78 @@ body {
     transition: transform 0.5s linear;
 }
 
-#but1:checked~.wraper-description>.slider-description {
+#but1:checked~.under-slider>.wraper-description>.slider-description {
     transform: translateX(0);
     transition: transform 0.5s linear;
 }
 
-#but2:checked~.wraper-description>.slider-description {
+
+#but2:checked~.under-slider>.wraper-description>.slider-description {
     transform: translateX(-100%);
     transition: transform 0.5s linear;
 }
 
-#but3:checked~.wraper-description>.slider-description {
+#but3:checked~.under-slider>.wraper-description>.slider-description {
     transform: translateX(-200%);
     transition: transform 0.5s linear;
 }
 
-#but4:checked~.wraper-description>.slider-description {
+#but4:checked~.under-slider>.wraper-description>.slider-description {
     transform: translateX(-300%);
     transition: transform 0.5s linear;
+}
+
+#but1:checked~.under-slider>.label-computer>.l1>.innerLabel {
+    background-color: aqua;
+}
+#but2:checked~.under-slider>.label-computer>.l2>.innerLabel {
+    background-color: aqua;
+}
+#but3:checked~.under-slider>.label-computer>.l3>.innerLabel {
+    background-color: aqua;
+}
+#but4:checked~.under-slider>.label-computer>.l4>.innerLabel {
+    background-color: aqua;
+}
+
+.under-slider {
+    margin-top: 20px;
+}
+
+.label-computer {
+    display: inline-block;
+    background-color: transparent;
+    margin-right: 0em;
+
+}
+
+.label-mobile {
+    width: 50%;
+    margin: 20px auto 0px;
+    display: block;
+    background-color: transparent;
+}
+
+.label {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    margin: auto 5%;
+    display: inline-block;
+
+}
+
+.innerLabel {
+    margin-top: 4.5px;
+    margin-left: 4.5px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+
+
+.label:hover .innerLabel {
+    background-color: black ;
 }
 
