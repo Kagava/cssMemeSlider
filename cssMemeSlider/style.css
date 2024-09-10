@@ -131,23 +131,30 @@ body {
     background-color: aqua;
 }
 
+#but1:checked~.label-div>.l1>.innerLabel {
+    background-color: aqua;
+}
+#but2:checked~.label-div>.l2>.innerLabel {
+    background-color: aqua;
+}
+#but3:checked~.label-div>.l3>.innerLabel {
+    background-color: aqua;
+}
+#but4:checked~.label-div>.l4>.innerLabel {
+    background-color: aqua;
+}
+
 .under-slider {
     margin-top: 20px;
 }
 
-.label-computer {
+.label-div {
     display: inline-block;
     background-color: transparent;
     margin-right: 0em;
 
 }
 
-.label-mobile {
-    width: 50%;
-    margin: 20px auto 0px;
-    display: block;
-    background-color: transparent;
-}
 
 .label {
     width: 20px;
@@ -172,3 +179,24 @@ body {
     background-color: black ;
 }
 
+.label-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .label-mobile {
+        display: block;
+    }
+    .label-div {
+        width: 30%;
+        margin: 20px auto 0px;
+        display: block;
+        background-color: transparent;
+    }
+    .label-computer {
+        display: none;
+    }
+    .wraper-description {
+        width: 100%;
+    }
+}
